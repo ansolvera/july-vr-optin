@@ -1,0 +1,28 @@
+body {
+
+    // Below 767px;
+    @media(max-width: map-get($breakpoints, 'medium') - 0.0625rem) {
+        font-size: 0.875rem; // 14px   
+    }
+
+    // From 768px to 1023px;
+    @media(min-width: map-get($breakpoints, 'medium')) and (max-width: map-get($breakpoints, 'large') - 0.0625rem) {
+        font-size: 1rem; // 16px 
+    }
+
+    // From 1024px to 1279px;
+    @media(min-width: map-get($breakpoints, 'large')) and (max-width: map-get($breakpoints, 'xl') - 0.0625rem) {
+        font-size: 1.125rem; // 18px 
+    }
+
+    // From 1280px to 1535px;
+    @media(min-width: map-get($breakpoints, 'xl')) and (max-width: map-get($breakpoints, '2xl') - 0.0625rem) {
+        font-size: 1.25rem; // 20px
+    }
+
+    // Above 1535px
+    @media(min-width: map-get($breakpoints, '2xl')) {
+        font-size: 1.5rem; // 24px
+    }
+
+}

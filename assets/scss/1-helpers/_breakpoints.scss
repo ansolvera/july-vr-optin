@@ -1,0 +1,45 @@
+// ********************
+// BREAKPOINTS
+// ********************
+
+$breakpoints: (
+    "small": 40rem, // 640px
+    "medium": 48rem, // 768px
+    "large": 64rem, // 1024px
+    "xl": 80rem, // 1280px
+    "2xl": 96rem, // 1536px
+    "3xl": 100rem, // 1600px
+);
+
+@mixin breakpointsUp($min) {
+    @media(min-width: map-get($breakpoints, $min)) {
+        @content;
+    }
+}
+
+@mixin breakpointsDown($max) {
+    @media(max-width: (map-get($breakpoints, $max) - 0.0625rem)) {
+        @content;
+    }
+}
+
+.mobile-only {
+    @include breakpointsUp(medium) {
+        display: none;
+    }
+
+    @include breakpointsDown(medium) {
+        display: inline;
+    }
+
+}
+
+.desktop-only {
+    @include breakpointsDown(medium) {
+        display: none;
+    }
+
+    @include breakpointsUp(medium) {
+        display: inline;
+    }
+}

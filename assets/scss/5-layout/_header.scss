@@ -1,0 +1,14 @@
+header {
+    position: absolute;
+    z-index: 999;
+    top: 0; right: 0;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    height: 10rem;
+    background-color: transparent;
+}
+
+.header__logo {
+    width: auto; height: 4rem;
+}
