@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/svg" href="static/img/favicon.svg">
 
     <!-- CUSTOM STYLESHEET -->
-    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 
@@ -27,7 +27,7 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section id="hero" class="section py-240">
+    <section id="hero--ty" class="section py-240">
         <div class="container">
             <div class="hero__intro--ty mb-80">
                 <h1 class="text-center">Yes, you're in!</h1>
@@ -42,6 +42,37 @@
                         <button class="btn" type="Submit">Submit</button>
                     </form>
 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTDOWN SECTION -->
+    <section id="countdown--ty" class="section py-120">
+        <div class="container">
+            <div class="grid-cols-2">
+                <div class="countdown__left">
+                    <h3 class="mb-10">Your Free Training Starts in</h3>
+                    <p class="mb-40">July 22nd at 11am PT / 2pm ET / 7pm BST</p>
+                    <button class="btn">Add to calendar</button>
+                </div>
+                <div class="countdown__right">
+                    <div class="countdown__wrapper--number flex-col justify-center items-center">
+                        <p id="days" class="countdown__number mb-10">000</p>
+                        <h6 id="dayslabel" class="countdown__label text-center">Days</h6>
+                    </div>
+                    <div class="countdown__wrapper--number flex-col justify-center items-center">
+                        <p id="hours" class="countdown__number mb-10">000</p>
+                        <h6 id="hourslabel" class="countdown__label text-center">Hours</h6>
+                    </div>
+                    <div class="countdown__wrapper--number flex-col justify-center items-center">
+                        <p id="minutes" class="countdown__number mb-10">000</p>
+                        <h6 id="minuteslabel" class="countdown__label text-center">Minutes</h6>
+                    </div>
+                    <div class="countdown__wrapper--number flex-col justify-center items-center">
+                        <p id="seconds" class="countdown__number mb-10">000</p>
+                        <h6 id="secondslabel" class="countdown__label text-center">Seconds</h6>
+                    </div>
                 </div>
             </div>
         </div>
