@@ -10,19 +10,19 @@
     color: $gray-500;
 
     // Below 639px;
-    @media(max-width: calc(map-get($breakpoints, 'small') - 0.0625rem)) {
+    @media(max-width: (map-get($breakpoints, 'small') - 0.0625rem)) {
         font-size: 0.875rem;
         line-height: 1.71;  
     }
     
     // From 640px to 767px;
-    @media(min-width: map-get($breakpoints, 'small')) and (max-width: calc(($breakpoints, 'medium') - 0.0625rem)) {
+    @media(min-width: map-get($breakpoints, 'small')) and (max-width: (map-get($breakpoints, 'medium') - 0.0625rem)) {
         font-size: 1rem;
         line-height: 1.75;
     }
 
     // From 768px to 1023px;
-    @media(min-width: map-get($breakpoints, 'medium')) and (max-width: calc(($breakpoints, 'large') - 0.0625rem)) {
+    @media(min-width: map-get($breakpoints, 'medium')) and (max-width: (map-get($breakpoints, 'large') - 0.0625rem)) {
         font-size: 1.125rem;
         line-height: 1.78;
     }
@@ -42,7 +42,7 @@
         margin-top: 0;
 
         // Below 639px;
-        @media(max-width: calc(map-get($breakpoints, 'small') - 0.0625rem)) {
+        @media(max-width: (map-get($breakpoints, 'small') - 0.0625rem)) {
             margin-top: 0.89em;
             margin-bottom: 0.89em;
             font-size: 1.29em;
@@ -50,7 +50,7 @@
         }
         
         // From 640px to 767px;
-        @media(min-width: map-get($breakpoints, 'small')) and (max-width: calc(($breakpoints, 'medium') - 0.0625rem)) {
+        @media(min-width: map-get($breakpoints, 'small')) and (max-width: (map-get($breakpoints, 'medium') - 0.0625rem)) {
             margin-top: 1.2em;
             margin-bottom: 1.2em;
             font-size: 1.25em;
@@ -58,7 +58,7 @@
         }
 
         // From 768px to 1023px;
-        @media(min-width: map-get($breakpoints, 'medium')) and (max-width: calc(($breakpoints, 'large') - 0.0625rem)) {
+        @media(min-width: map-get($breakpoints, 'medium')) and (max-width: (map-get($breakpoints, 'large') - 0.0625rem)) {
             margin-top: 1.09em;
             margin-bottom: 1.09em;
             font-size: 1.22em;
@@ -82,12 +82,12 @@
     margin-bottom: 1.25em;
 
     // Below 639px;
-    @media(max-width: calc(map-get($breakpoints, 'small') - 0.0625rem)) {
+    @media(max-width: (map-get($breakpoints, 'small') - 0.0625rem)) {
         margin: 1.14em 0; 
     }
     
     // From 640px to 767px;
-    @media(min-width: map-get($breakpoints, 'small')) and (max-width: calc(($breakpoints, 'medium') - 0.0625rem)) {
+    @media(min-width: map-get($breakpoints, 'small')) and (max-width: (map-get($breakpoints, 'medium') - 0.0625rem)) {
         margin: 1.25em 0;
     }
 
@@ -107,13 +107,13 @@
     margin-bottom: 1.25em;
 
     // Below 639px;
-    @media(max-width: calc(map-get($breakpoints, 'small') - 0.0625rem)) {
+    @media(max-width: (map-get($breakpoints, 'small') - 0.0625rem)) {
         margin-top: 1.14em;
         margin-bottom: 1.14em;
     }
     
     // From 640px to 767px;
-    @media(min-width: map-get($breakpoints, 'small')) and (max-width: calc(($breakpoints, 'medium') - 0.0625rem)) {
+    @media(min-width: map-get($breakpoints, 'small')) and (max-width: (map-get($breakpoints, 'medium') - 0.0625rem)) {
         margin-top: 1.25em;
         margin-bottom: 1.25em;
     }
@@ -141,12 +141,12 @@
         }
 
         // Below 639px;
-        @media(max-width: calc(map-get($breakpoints, 'small') - 0.0625rem)) {
+        @media(max-width: (map-get($breakpoints, 'small') - 0.0625rem)) {
             padding-left: 1.57em;
         }
         
         // From 640px to 767px;
-        @media(min-width: map-get($breakpoints, 'small')) and (max-width: calc(($breakpoints, 'medium') - 0.0625rem)) {
+        @media(min-width: map-get($breakpoints, 'small')) and (max-width: (map-get($breakpoints, 'medium') - 0.0625rem)) {
             padding-left: 1.67em;
         }
 

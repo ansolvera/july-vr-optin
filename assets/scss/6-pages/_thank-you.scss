@@ -1,10 +1,16 @@
 section#hero--ty {
     @extend #hero;
     background-image: url('static/img/matt_ty.webp');
+    background-repeat: none;
+    background-size: cover;
     background-position: top 0 left 35%;
 }
 
 section#countdown--ty {
-    @extend #countdown;
     background-color: $gray-50;
+
+    .countdown_wrapper--number {
+        background-color: $gray-50;
+    }
+
 }
