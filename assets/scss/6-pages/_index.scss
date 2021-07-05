@@ -255,7 +255,7 @@ section#expect {
 .hero__form {
     background-color: rgba($white, 0.1);
     backdrop-filter: blur(4px) saturate(110%);
-    color: $gray-300;
+    color: $gray-100;
 
     > input[type=text] {
         background-color: rgba($gray-50, 0.25);
