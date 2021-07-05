@@ -224,7 +224,6 @@ section#expect {
     > input[type=text] {
         width: 100%;
         padding: 1rem 2rem;
-        background-color: $gray-50;
     }
 
     button {
@@ -235,6 +234,11 @@ section#expect {
 
 .expect__form {
     background-color: $white;
+
+    > input[type=text] {
+        background-color: $gray-50;
+    }
+
 }
 
 .expect__testimonial {
@@ -252,6 +256,11 @@ section#expect {
     background-color: rgba($white, 0.1);
     backdrop-filter: blur(4px) saturate(110%);
     color: $gray-300;
+
+    > input[type=text] {
+        background-color: rgba($gray-50, 0.25);
+    }
+
 }
 
 // ********************

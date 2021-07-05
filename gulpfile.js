@@ -32,6 +32,7 @@ function jsTask() {
 
 function serverTask(cb) {
     connect.server({
+        server: true,
         port: 8080,
         keepalive: true,
         base: '.'
