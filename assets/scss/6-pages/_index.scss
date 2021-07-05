@@ -29,11 +29,12 @@ section#hero {
     display: block;
     position: absolute;
     z-index: 150;
-    top: 0; right: 0;
-    width: 50%; height: 100%;
+    right: 0; bottom: 0;
+    width: 50%; height: 85%;
     background-image: url('/static/img/matt_cutout.webp');
+    background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: auto 85%;
+    background-size: contain;
     filter: brightness(80%) opacity(80%) saturate(90%);
 
     &::before {
@@ -64,14 +65,14 @@ section#hero {
     // From 1024px to 1279px;
     @media(min-width: map-get($breakpoints, 'large')) and (max-width: map-get($breakpoints, 'xl') - 0.0625rem) {
         display: block;
-        background-position: bottom -10% right 120%;
+        //background-position: bottom -10% right 120%;
         filter: opacity(20%);
     }
 
     // From 1280px to 1535px;
     @media(min-width: map-get($breakpoints, 'xl')) and (max-width: map-get($breakpoints, '2xl') - 0.0625rem) {
         display: block;
-        background-position: bottom -10% right 100%;
+        //background-position: bottom -10% right 100%;
         filter: opacity(30%);
     }
 
@@ -282,9 +283,9 @@ section#matt {
     top: 0; left: 0;
     width: 50%; height: 100%;
     background-image: url('/static/img/matt_sitting.webp');
-    background-position: top 50% left 0;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto 150%;
+    background-size: cover;
 
     &::before {
         content: '';
@@ -305,17 +306,17 @@ section#matt {
 
         // From 1280px to 1535px;
         @media(min-width: map-get($breakpoints, 'xl')) and (max-width: map-get($breakpoints, '2xl') - 0.0625rem) {
-            background-image: linear-gradient(to right, rgba($white, 0.0), rgba($white, 0.9) 95%);
+            background-image: linear-gradient(to right, rgba($white, 0.0), rgba($white, 0.9) 99%);
         }
 
         // From 1536px to 1599px;
         @media(min-width: map-get($breakpoints, '2xl')) and (max-width: map-get($breakpoints, '3xl') - 0.0625rem) {
-            background-image: linear-gradient(to right, rgba($white, 0.0), rgba($white, 0.9) 85%);
+            background-image: linear-gradient(to right, rgba($white, 0.0), rgba($white, 0.9) 99%);
         }
 
         // Above 1600px;
         @media(min-width: map-get($breakpoints, '3xl')) {
-            background-image: linear-gradient(to right, rgba($white, 0.0), rgba($white, 1.0) 80%);
+            background-image: linear-gradient(to right, rgba($white, 0.0), rgba($white, 1.0) 99%);
         }
 
     }

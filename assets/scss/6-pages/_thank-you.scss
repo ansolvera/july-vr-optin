@@ -3,7 +3,7 @@ section#hero--ty {
     background-image: url('static/img/matt_ty.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top 0 left -10%;
+    background-position: center center;
     background-blend-mode: normal;
 
     &::before {
@@ -15,7 +15,7 @@ section#hero--ty {
         background-image: linear-gradient(to bottom, rgba($gray-500, 0.1), rgba($gray-500, 1.0) 80%);
 
         @include breakpointsUp(medium) {
-            background-image: linear-gradient(to right, rgba($gray-500, 0.1), rgba($gray-500, 1.0) 80%);
+            background-image: linear-gradient(to right, rgba($gray-500, 0.1), rgba($gray-500, 0.9));
         }
 
     }
