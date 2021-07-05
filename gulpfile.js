@@ -49,7 +49,7 @@ function reloadTask(cb) {
 }
 
 function watchTask() {
-    watch('*.php', reloadTask);
+    watch(['*.php', '*.html'], reloadTask);
     watch(['assets/**/*.scss', 'assets/**/*.js'], series(scssTask, jsTask, reloadTask));
 }
 
