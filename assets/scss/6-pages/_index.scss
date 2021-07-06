@@ -244,6 +244,9 @@ section#expect {
 
     > input[type=text] {
         background-color: rgba($gray-50, 0.25);
+    }
+
+    ::placeholder {
         color: $gray-100;
     }
 
