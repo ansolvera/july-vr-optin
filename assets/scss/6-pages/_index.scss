@@ -184,6 +184,15 @@ section#expect {
     background-color: $gray-50;
 }
 
+.expect__intro {
+    text-align: center;
+
+    @include breakpointsUp(large) {
+        text-align: start;
+    }
+
+}
+
 .expect__right {
     display: flex;
     flex-direction: column;

@@ -30,3 +30,15 @@ section#hero--ty {
 section#countdown--ty {
     background-color: $gray-50;
 }
+
+.countdown__btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpointsUp(large) {
+        justify-content: flex-start;
+    }
+
+}
