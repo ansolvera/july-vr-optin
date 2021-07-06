@@ -4,11 +4,10 @@
 
 section#hero {
     background-color: $gray-500;
-    background-image: url('static/img/matt_screens.webp');
+    background-image: url('static/img/matt_screens.webp'), url('static/img/matt_screens.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: overlay;
 
     &::before {
         content: '';
@@ -16,7 +15,7 @@ section#hero {
         z-index: 100;
         top: 0; right: 0; bottom: 0; left: 0;
         width: 100%; height: 100%;
-        background-image: linear-gradient(to right, rgba($gray-500, 1.0), rgba($gray-500, 0.8) 60%, rgba($gray-500, 0.1));
+        background-image: linear-gradient(to right, rgba($gray-500, 1.0), rgba($gray-500, 0.8) 60%, rgba($gray-500, 0.25));
     }
 
     > .container {
@@ -32,12 +31,12 @@ section#hero {
     z-index: 150;
     left: 0; bottom: 0;
     width: 50%; height: 100%;
-    background-image: url('/static/img/matt_standing.webp');
+    background-image: url('static/img/matt_standing.webp'), url('static/img/matt_standing.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     mix-blend-mode: screen;
-    filter: brightness(70%) saturate(90%) contrast(125%);
+    filter: brightness(65%) saturate(90%) contrast(125%);
 
     @include breakpointsUp(large) {
         display: block;
@@ -267,7 +266,7 @@ section#matt {
     position: absolute;
     top: 0; left: 0;
     width: 50%; height: 100%;
-    background-image: url('/static/img/matt_sitting.webp');
+    background-image: url('static/img/matt_sitting.webp'), url('static/img/matt_sitting.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
