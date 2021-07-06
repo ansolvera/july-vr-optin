@@ -1,5 +1,5 @@
 section#hero--ty {
-    @extend #hero;
+    background-color: $gray-500;
     background-image: url('static/img/matt_ty.webp'), url('static/img/matt_ty.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,9 +13,10 @@ section#hero--ty {
         top: 0; right: 0; bottom: 0; left: 0;
         width: 100%; height: 100%;
         background-image: linear-gradient(to bottom, rgba($gray-500, 0.2), rgba($gray-500, 1.0) 80%);
+        backdrop-filter: opacity(65%) saturate(90%);
 
         @include breakpointsUp(medium) {
-            background-image: linear-gradient(to right, rgba($gray-500, 0.2), rgba($gray-500, 0.9));
+            background-image: linear-gradient(to right, rgba($gray-500, 0.1), rgba($gray-500, 1.0));
         }
 
     }
