@@ -42,3 +42,27 @@ section#countdown--ty {
     }
 
 }
+
+.hero__form__success {
+    visibility: hidden;
+    opacity: 0.0;
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    background-color: #ECFDF5;
+    word-wrap: normal;
+}
+
+.success__left {
+    max-width: 75%;
+
+    > img {
+        margin-right: 1rem;
+    }
+
+    > p {
+        font-size: 1rem;
+        color: #10B981;
+    }
+
+}

@@ -31,3 +31,22 @@ document.querySelector('#seconds').textContent = seconds;
 
 timer();
 setInterval(timer, 1000);
+
+// ********************
+// SUCCESS ALERT
+// ********************
+
+let form = document.querySelector('.hero__form')
+let button = document.querySelector('#submitButton');
+let alert = document.querySelector('#successAlert');
+let close = document.querySelector('#successClose');
+
+button.addEventListener('click', () => {
+    alert.classList.remove('is-hidden');
+    alert.classList.add('is-shown');
+});
+
+close.addEventListener('click', () => {
+    alert.classList.remove('is-shown');
+    alert.classList.add('is-hidden');
+})

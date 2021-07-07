@@ -215,10 +215,6 @@ section#expect {
         padding: 1rem 2rem;
     }
 
-    button {
-        width: 100%;
-    }
-
 }
 
 .expect__form {
@@ -231,6 +227,10 @@ section#expect {
     p {
         text-align: center;
         color: $gray-400;
+    }
+
+    button {
+        width: 100%;
     }
 
 }
@@ -253,6 +253,10 @@ section#expect {
 
     > input[type=text] {
         background-color: rgba($gray-50, 0.25);
+    }
+
+    .btn {
+        width: 100%;
     }
 
     ::placeholder {

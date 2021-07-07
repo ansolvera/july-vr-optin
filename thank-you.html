@@ -39,7 +39,16 @@
                         <p class="eyebrow mb-20">Next Steps:</p>
                         <p class="mb-40">Make sure you grab your FREE webinar prep sheet. Just drop your phone number below and we'll send it over!</p>
                         <input class="mb-20" type="text" placeholder="Phone number *" required>
-                        <button class="btn" type="Submit">Submit</button>
+                        <button id="submitButton" class="btn" type="Submit">Send my gift!</button>
+                        <div id="successAlert" class="hero__form__success flex-row justify-between items-center is-hidden">
+                            <div class="success__left flex-row justify-start items-start">
+                                <img src="static/img/check-circle.svg" alt="">
+                                <p>YES! We've just texted you your FREE webinar prep sheet.</p>
+                            </div>
+                            <button id="successClose">
+                                <img src="static/img/x.svg" alt="">
+                            </button>
+                        </div>
                     </form>
 
                 </div>
